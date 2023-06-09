@@ -1,4 +1,4 @@
-import { ethers } from "ethers";
+import { ethers } from "../node_modules/ethers";
 import detectEthereumProvider from "@metamask/detect-provider";
 
 let provider;

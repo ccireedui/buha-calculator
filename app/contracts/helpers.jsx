@@ -1,7 +1,13 @@
 import { ethers } from "ethers";
 import detectEthereumProvider from "@metamask/detect-provider";
 
-const provider = await detectEthereumProvider();
+let provider;
+(async () => {
+  const result = await detectEthereumProvider();
+  if (result) {
+    provider = result;
+  }
+})();
 
 async function getWeb3Essentials() {
   if (provider) {

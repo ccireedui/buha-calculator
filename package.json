@@ -1,0 +1,10 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.9.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "hardhat-abi-exporter": "^2.10.1"
+  }
+}
